@@ -41,3 +41,50 @@ output:
 -   11주 - 테크니컬 노트 중간 정리\
 -   12\~15주 - 수강생별 기술 학습 및 실습 5\~8
 -   16주 - 테크니컬 노트 최종 정리
+
+
+## 수업 내용
+
+### 주제선정
+
+각자 한 학기동안 연구를 통해서 만들어볼 기술문서에 대한 주제 선정
+
+- Linux + docker (Seongbo)
+  - Objective: To build Rstudio env
+- R language (A-young)
+  - Objective: BT Codon design 
+- Tensorflow, Keras (Aporva, Wonjae)
+  - Objective (Aporva): To understand how alphafold2 & rosettafold work
+  - Objective (Wonjae): To build tensorflow models (data)
+- Git 
+- PDB, NCBI DB API (SeongKun)
+  - Objective: Download and preprocessing (FACS screening) 
+- Python 
+- Rstudio (Minji)
+  - Objective: Load data and plot graphs 
+ 
+ 
+ 위 내용 구현을 위한 기본 작업 방법
+ 
+- We’ll use Cloud based Rstudio
+- Once create an account, it’ll ready to use Rstudio
+- Rmarkdown for report (Rmarkdown study) 
+- Homework ? Create a Rmarkdown file after login Rstudio
+
+
+### Rstudio 접속방법
+
+- 브라우져 오픈 
+- 주소창에 공지된 IP 입력
+- 설정된 계정으로 Rstudio 로그인
+
+
+
+
+
+
+
+
+
+
+
