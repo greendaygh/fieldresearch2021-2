@@ -43,28 +43,31 @@ output:
 -   16주 - 테크니컬 노트 최종 정리
 
 
-## 수업 내용
+## 수업 (20210902)
 
 ### 주제선정
 
 각자 한 학기동안 연구를 통해서 만들어볼 기술문서에 대한 주제 선정
 
-- Linux + docker (Seongbo)
+- 허성보: Linux + docker (Seongbo)
   - Objective: To build Rstudio env
-- R language (A-young)
+- 박아영: R language (A-young)
   - Objective: BT Codon design 
-- Tensorflow, Keras (Aporva, Wonjae)
-  - Objective (Aporva): To understand how alphafold2 & rosettafold work
-  - Objective (Wonjae): To build tensorflow models (data)
+- 성원재: Tensorflow, Keras (Wonjae)
+  - Objective: To build tensorflow models (data)
+- 아포바: Shiny, R package (Aporva)
+  - Objective: To build R (shiny) interface for dsembler-script
 - Git 
-- PDB, NCBI DB API (SeongKun)
+- 박성군: PDB, NCBI DB API (SeongKun)
   - Objective: Download and preprocessing (FACS screening) 
 - Python 
-- Rstudio (Minji)
+- 고민지: Rstudio (Minji)
   - Objective: Load data and plot graphs 
  
  
- 위 내용 구현을 위한 기본 작업 방법
+### 구현 방법
+
+위 목표 구현을 위한 필요 사항
  
 - We’ll use Cloud based Rstudio
 - Once create an account, it’ll ready to use Rstudio
@@ -74,9 +77,21 @@ output:
 
 ### Rstudio 접속방법
 
-- 브라우져 오픈 
-- 주소창에 공지된 IP 입력
-- 설정된 계정으로 Rstudio 로그인
+1. 터미널 접속을 통한 계정 생성 (강사나 Aporva 등 도움)
+  - KRIBB ID와 동일 ID 계정 생성 (카톡 발신 예정)
+  - putty [다운로드](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi)
+  - 설치/실행 후 접속 (Session -> Host name에 IP, Port에 8022 입력)
+  - 주어진 계정으로 터미널 로그인
+  - 로그인 후 패스워드 변경 (로그인 하면 다음 그림처럼 자동 변경 요청)
+  - 패스워드 변경 후 카톡이나 메일로 변경 알림 
+
+![](images/password.PNG)
+
+
+2. 브라우저로 Rstudio 접속 
+  - 브라우져 오픈 
+  - 주소창에 공지된 IP 입력 (카톡 발신 예정)
+  - 설정된 계정으로 Rstudio 로그인 
 
 
 
