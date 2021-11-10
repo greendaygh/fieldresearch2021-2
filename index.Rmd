@@ -156,11 +156,11 @@ mainfont : NanumGothic
 
 ## Nanopore sequencing pipeline
 
-박성군 연구원 발표
+박성군 연구원 NGS pipeline 발표
 
-DNA PCA 실험
 
-## PCA reaction protocol
+
+## DNA PCA 실험
 
 ```{css, echo=F}
 #protocol {
@@ -172,7 +172,7 @@ DNA PCA 실험
 
 ::: {#protocol}
 
-<h4> 2개 샘플 수행 기준 </h4>
+<h4> 2개 샘플 수행 기준 PCA 프로토콜 </h4>
 
 ## DNA 준비 희석{-}
 
