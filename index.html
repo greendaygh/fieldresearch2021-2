@@ -288,27 +288,27 @@ div.tocify {
 <h2 number="4.1"><span class="header-section-number">4.1</span> 주제선정</h2>
 <p>각자 한 학기동안 연구를 통해서 만들어볼 기술문서에 대한 주제 선정</p>
 <ul>
-<li>허성보: Linux + docker (Seongbo)
+<li><p>허성보: Linux + docker (Seongbo)</p>
 <ul>
 <li>Objective: To build Rstudio env</li>
 </ul></li>
-<li>박아영: R language (A-young)
+<li><p>박아영: R language (A-young)</p>
 <ul>
 <li><del>Objective: BT Codon design</del></li>
 </ul></li>
-<li>성원재: <del>Tensorflow, Keras (Wonjae)</del> R based data analysis
+<li><p>성원재: <del>Tensorflow, Keras (Wonjae)</del> R based data analysis</p>
 <ul>
 <li>Objective: <del>To build tensorflow models (data)</del></li>
 </ul></li>
-<li>아포바: Shiny, R package (Aporva)
+<li><p>아포바: Shiny, R package (Aporva)</p>
 <ul>
 <li>Objective: To build R (shiny) interface for dsembler-script (Database)</li>
 </ul></li>
-<li>박성군: <del>PDB, NCBI DB API (SeongKun)</del> Shiny
+<li><p>박성군: <del>PDB, NCBI DB API (SeongKun)</del> Shiny</p>
 <ul>
 <li>Objective: <del>Download and preprocessing (FACS screening)</del></li>
 </ul></li>
-<li>고민지: Rstudio (Minji)
+<li><p>고민지: Rstudio (Minji)</p>
 <ul>
 <li>Objective: Load data and plot graphs</li>
 </ul></li>
@@ -405,6 +405,88 @@ div.tocify {
 <h2 number="11.1"><span class="header-section-number">11.1</span> Nanopore sequencing pipeline</h2>
 <p>박성군 연구원 발표</p>
 <p>DNA PCA 실험</p>
+</div>
+<div id="pca-reaction-protocol" class="section level2" number="11.2">
+<h2 number="11.2"><span class="header-section-number">11.2</span> PCA reaction protocol</h2>
+<style type="text/css">
+#protocol {
+  background-color: #F8F8FF;
+  padding: 30px;
+}
+</style>
+<div id="protocol">
+<h4>
+2개 샘플 수행 기준
+</h4>
+<div id="dna-준비-희석" class="section level2 unnumbered">
+<h2 class="unnumbered">DNA 준비 희석</h2>
+<p>재료: 아이스, KOD-one, 샘플 (2개 기준), 1.5ml tube 7개, 3DW</p>
+<ul>
+<li>DNA polymerase KOD-one 꺼내 아이스에 넣어둠</li>
+<li>50pmol powder 상태 DNA 샘플을 vortexing 후 spindown 2초</li>
+<li>샘플에 3DW 10 <span class="math inline">\(\mu\)</span>l 를 넣고 vortexing 후 spindown 2초</li>
+<li>1/10, 1/50, 1/100 농도 희석용 1.5ml tube 6개 준비 (2개 샘플)</li>
+<li>원액 1 <span class="math inline">\(\mu\)</span>l를 각각 1/10, 1/50 에 넣고 vortexing, spindown</li>
+<li>1/10 샘플 1 <span class="math inline">\(\mu\)</span>l를 1/100에 넣고 vortexing, spindown</li>
+</ul>
+</div>
+<div id="pca" class="section level2 unnumbered">
+<h2 class="unnumbered">PCA</h2>
+<p>재료: PCR tube 8개, 3DW</p>
+<ul>
+<li>1.5ml tube에 KOD-one 100 <span class="math inline">\(\mu\)</span>l, 3DW 90 <span class="math inline">\(\mu\)</span>l 넣고 vortexing</li>
+<li>PCR tube 8개 준비</li>
+<li>각 tube에 위 KOD 희석액 19 <span class="math inline">\(\mu\)</span>l 분주</li>
+<li>각 tube에 원액, 1/10, 1/50, 1/100 샘플 1 <span class="math inline">\(\mu\)</span>l를 분주 (20 <span class="math inline">\(\mu\)</span>l 채움)</li>
+<li>vortexing 후 Thermal cycler 수행 (AY, PCA 프로토콜)
+<ul>
+<li>94도 10초</li>
+<li>Denaturation: 94도 10초</li>
+<li>Annealing: 55도 20초 (lamprate -0.1/도)</li>
+<li>Extension: 72도 20초 (kb당 5~10초, 1.5kb 기준)</li>
+<li>Cycle: 20 cycle</li>
+<li>Final extension: 72도 3분</li>
+</ul></li>
+</ul>
+</div>
+<div id="pcr" class="section level2 unnumbered">
+<h2 class="unnumbered">PCR</h2>
+<p>재료: PCR용 primer 2set, PCR tube 8, 3DW</p>
+<ul>
+<li>Primer dry 샘플에 (20mer 기준) 300 <span class="math inline">\(\mu\)</span>l 넣고 vortexing spindown</li>
+<li>1.5ml tube에 3DW 228 <span class="math inline">\(\mu\)</span>l + 두 개의 primer 각각 1 <span class="math inline">\(\mu\)</span>l를 넣음</li>
+<li>PCR tube 8개 준비</li>
+<li>각 tube에 위 혼합액 23 <span class="math inline">\(\mu\)</span>l 분주</li>
+<li>각 tube에 KOD 혼합액 25 분주</li>
+<li>PCA product 2 <span class="math inline">\(\mu\)</span>l 분주
+<ul>
+<li>98도 10초</li>
+<li>Denaturation: 98도 10초</li>
+<li>Annealing: 55도 5초</li>
+<li>Extension: 72도 20초 (kb당 5~10초, 1.5kb 기준)</li>
+<li>Cycle: 30 cycle</li>
+<li>Final extension: 68도 1분</li>
+<li>4도 무한</li>
+</ul></li>
+<li>완료 시 PCR, PCA 각 8개 PCR tube</li>
+</ul>
+</div>
+<div id="gel-qc" class="section level2 unnumbered">
+<h2 class="unnumbered">Gel QC</h2>
+<p>재료: 1.5ml tube, Bluejuice 10x, 3DW, PCR tube 8개, 아가로즈 젤</p>
+<ul>
+<li>젤 준비 (17 칸)</li>
+<li>1.5 ml tube에 Bluejuice 10x 10 <span class="math inline">\(\mu\)</span>l와 3DW 70 <span class="math inline">\(\mu\)</span>l를 섞음</li>
+<li>PCR tube 8개에 각각 8 <span class="math inline">\(\mu\)</span>l 분주</li>
+<li>PCR tube 8개에 앞서 PCA product 2 <span class="math inline">\(\mu\)</span> 분주</li>
+<li>위 PCR Product 8개 튜브에 Bluejuice 5 <span class="math inline">\(\mu\)</span>l 분주</li>
+<li>가운데 lane Ladder 로딩</li>
+<li>Ladder 기준으로 왼쪽 한 샘플, 오른쪽 다른 샘플 각각 PCA, PCR 순서로 로딩</li>
+<li>130v 20분 전기영동</li>
+<li>사진 확인</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div id="수업-20211108" class="section level1" number="12">
