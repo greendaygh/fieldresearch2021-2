@@ -54,15 +54,16 @@ https://greendaygh.github.io/fieldresearch2021-2/
 - 허성보: Linux + docker (Seongbo)
   - Objective: To build Rstudio env
 - 박아영: R language (A-young)
-  - Objective: BT Codon design 
-- 성원재: Tensorflow, Keras (Wonjae)
-  - Objective: To build tensorflow models (data)
+  - ~~Objective: BT Codon design~~ 
+- 성원재: ~~Tensorflow, Keras (Wonjae)~~ R based data analysis
+  - Objective: ~~To build tensorflow models (data)~~
+  
 - 아포바: Shiny, R package (Aporva)
-  - Objective: To build R (shiny) interface for dsembler-script
-- Git 
-- 박성군: PDB, NCBI DB API (SeongKun)
-  - Objective: Download and preprocessing (FACS screening) 
-- Python 
+  - Objective: To build R (shiny) interface for dsembler-script (Database)
+  
+- 박성군: ~~PDB, NCBI DB API (SeongKun)~~ Shiny
+  - Objective: ~~Download and preprocessing (FACS screening)~~
+  
 - 고민지: Rstudio (Minji)
   - Objective: Load data and plot graphs 
  
