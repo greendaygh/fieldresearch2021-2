@@ -9,13 +9,12 @@ output:
 
 ---
 
-# Day1 (2021.09.02)
 
-## 강의목표
+# 강의목표
 
 본 현장연구에서는 합성생물학 연구에 필요한 컴퓨터 관련 지식의 학습과 실습을 통해서 관련 데이터의 수집과 변환, 가시화 그리고 분석 능력을 습득하는 것에 목적이 있음. 특히 개인별 연구 주제에 따라서 필요한 컴퓨팅 기술들을 정리하고 각 기술들에 대해서 짧은 테크니컬 노트 수준의 보고서들을 작성하는데 목적이 있음.
 
-## 운영방식
+# 운영방식
 
 -   각 수강생들의 학위과정 동안의 주요 연구 주제와 연계한 수업임을 고려한 각 수강생별 연구주제 토의 및 선정
 -   선정된 연구주제 중 컴퓨터 활용 관련한 기술을 정리하고 개인 수준별 타깃 기술 선정 및 목표를 수립함
@@ -29,7 +28,8 @@ output:
 -   가능한 명확하고 짧은 길이의 리포트가 선호됨
 -   과제물은 Rmarkdown을 활용한 pdf 형식의 문서로 제출함을 원칙으로 함
 
-## 일정
+
+# 일정
 
 -   1주 - 강의 개요 및 연구 주제 토의
 -   2주 - 각 수강생들의 연구 주제 발표 및 컴퓨팅 기술 도출
@@ -43,9 +43,9 @@ output:
 -   16주 - 테크니컬 노트 최종 정리
 
 
-## 수업 (20210902)
+# 수업 (20210902)
 
-### 주제선정
+## 주제선정
 
 각자 한 학기동안 연구를 통해서 만들어볼 기술문서에 대한 주제 선정
 
@@ -65,7 +65,7 @@ output:
   - Objective: Load data and plot graphs 
  
  
-### 구현 방법
+## 구현 방법
 
 위 목표 구현을 위한 필요 사항
  
@@ -75,7 +75,7 @@ output:
 - Homework ? Create a Rmarkdown file after login Rstudio
 
 
-### Rstudio 접속방법
+## Rstudio 접속방법
 
 1. 터미널 접속을 통한 계정 생성 (강사나 Aporva 등 도움)
   - KRIBB ID와 동일 ID 계정 생성 (카톡 발신 예정)
@@ -94,9 +94,9 @@ output:
   - 설정된 계정으로 Rstudio 로그인 
 
 
-## 수업 (20210913)
+# 수업 (20210913)
 
-### 사전 공지 
+## 사전 공지 
 
 월요일 10시 수업 관련해서 간단히 지금 하는 일들 ppt 2~3장으로 (5분 발표) 준비해 주시고 지난번 계획한 일들 진행을 어떻게 할지 다시 한 번 생각해 보세요 
 
@@ -104,7 +104,7 @@ output:
 그리고 클라우드 계정은 보안 이슈로 단분간 사용하기 어려울 것 같습니다. 대신 우리 192.168.122.158 서버를 Linux/Rstudio 사용합니다. 연구원 내에서만 접속이 가능하며 월요일에 계정 등 사용법을 설명 드리겠습니다.
 
 
-### Rstudio 접속방법
+## Rstudio 접속방법
 
 1. 터미널 접속을 통한 계정 생성
   - KRIBB ID와 동일 ID 계정 생성 
@@ -122,11 +122,141 @@ output:
   - http://192.168.122.158:8788 입력 
   - 앞서 설정된 계정으로 Rstudio 로그인 
 
+# 수업 (20210920)
+
+연구 발표
+
+# 수업 (20210927)
+
+연구 발표
+
+# 수업 (20211004)
+
+연구 발표
+
+# 수업 (20211018)
+
+연구 발표
+
+# 수업 (20211025)
+
+연구 발표 
+
+# 수업 (20211101)
+
+## Nanopore sequencing pipeline 
+
+박성군 연구원 발표
+
+DNA PCA 실험
+
+# 수업 (20211108)
+
+DNA PCA 실험 2nd
+
+# 수업 (20211111)
+
+온라인수업: https://www.remotemeeting.com/reservation/share/2c908ad67cea7782017d0902b318133f
+
+## Rstudio 접속
+
+1. 터미널 접속을 통한 계정(비번) 생성
+  - KRIBB ID와 동일 ID 계정 생성 
+  - putty [다운로드](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.76-installer.msi)
+  - 설치/실행 후 접속 (Session -> Host name에 192.168.122.158, Port에 8022 입력)
+  - 주어진 계정으로 터미널 로그인
+  - 비번은 모두 동일 (research2)
+  - 로그인 후 패스워드 변경 (로그인 하면 다음 그림처럼 자동 변경 요청)
+   
+![](images/password.PNG)
+  - 로그아웃 (창닫기, Ctrl+D)
+
+2. 브라우저로 Rstudio 접속 
+  - 브라우져 오픈 
+  - http://192.168.122.158:8788 입력 
+  - 앞서 설정된 계정으로 Rstudio 로그인 
+
+3. 화면 구성 
+
+## 프로젝트 
+
+File > New project
+
+## Rmarkdown 활용
+
+Rmakrdown은 Rstudio의 강의를 [링크](https://rmarkdown.rstudio.com/lesson-1.html){target="blank"} 참고하며 Markdown은 Pandoc의 문법을 [링크](https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html){target="blank"} 참고.
+
+Rstudio를 사용한 Rmarkdown 만드는 법을 익힘. Rstudio는 R언어 외에도 다양한 언어를 이용한 프로그래밍을 지원하며 Rstudio의 철학 중 하나는 Rmarkdown, shiny 등을 활용한 사람들과의 소통임. 
+
+-   Rstudio를 활용한 파일 업로드 및 다운로드 방법
+-   Rmarkdown 작성을 위한 Visual mode 활용
+-   Visual model에서 이미지, 코드블럭 넣기
+
+```{r, eval=F}
+a <- 2
+b <- 3
+c <- a*b
+c
+```
+
+
+## Vector
+
+vector는 R의 기본 데이터 구조. numeric vector, logical vector, character vector 등 저장되는 값의 타입에 따라 크게 세가지로 나눌 수 있으며 `class()` 함수를 이용해서 값의 타입을 알아낼 수 있음. `Combine function`인 `c()`를 활용하여 만들며 값을 순차적으로 붙일 수 있음.
+
+```{r, eval=F}
+v1 <- c(1, 2, 3, 4, 5)
+v2 <- c("a", "b", "c", "d", "e")
+class(v1)
+class(v2)
+```
+
+## Data frame
+
+데이터프레임은 매트릭스와 같은 형태로 컬럼 하나가 하나의 벡터 변수로서 각 변수들이 다른 모드의 값을 저장할 수 있음. \$ 기호를 이용하여 각 구성 변수를 참조할 수 있으며 컬럼 한 줄이 하나의 변수 이므로 새로운 변수도 컬럼 형태로 붙여 넣을 수 있음. 즉, 각 row는 샘플을 나타내고 각 column은 변수를 나타내며 각 변수들이 갖는 샘플의 개수 (row의 길이, vector 의 길이)는 같아야 함. R 기반의 데이터 분석에서는 가장 선호되는 데이터 타입으로 최근 `tidyverse` 패키지의 tibble 타입은 dataframe의 업그레이드 버전으로 볼 수 있음. 
+
+```{r, eval=F}
+v_df <- data.frame(v1, v2)
+v_df
+class(v_df)
+```
+
+```{r, eval=F}
+v3 <- c(121, 22, 31, 98, 45)
+v4 <- c("teamA", "teamB", "teamC", "teamD", "teamE")
+v5 <- data.frame(v1, v2, v3, v4)
+v5
+```
 
 
 
+## TODO
+다음 주제들에 대한 Rmarkdown 문서를 만드시오
 
+### 성원재{-}
+- 임의의 엑셀 파일 2개 이상 읽기
+- tidyverse 패키지 이용 데이터들을 병합하기
+- 해당 데이터 가시화용 그래프 그리기 
 
+### 박아영{-}
+- 엑셀 데이터 읽기
+- plot 이용한 그래프 그리기 
 
+### 박성군{-}
+- Shiny 이용한 app 만들기 (NGS 파이프라인 관리?)
 
+### Aporva{-}
+- Prepare MySQL docker image
+- Docker-compose for more than two docker images
+- To access MySQL server in R
+
+### 허성보{-}
+- 리눅스 디렉토리 구조 및 설명
+- vi 에디터로 파일 생성 
+- Docker 이미지 만들기 
+
+### 고민지{-}
+- R 데이터 타입 정리
+- 숫자형 벡터 만들기와 연산 
+- dataframe 만들기와 인덱싱 
 
