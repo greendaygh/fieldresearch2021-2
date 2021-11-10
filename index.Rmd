@@ -9,6 +9,8 @@ output:
 
 ---
 
+https://greendaygh.github.io/fieldresearch2021-2/
+
 
 # 강의목표
 
@@ -233,7 +235,7 @@ v5
 ## TODO
 다음 주제들에 대한 Rmarkdown 문서를 만드시오
 
-### 성원재{-}
+### Dr성원재{-}
 - 임의의 엑셀 파일 2개 이상 읽기
 - tidyverse 패키지 이용 데이터들을 병합하기
 - 해당 데이터 가시화용 그래프 그리기 
