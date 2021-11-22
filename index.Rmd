@@ -352,3 +352,26 @@ v5
 -   R 데이터 타입 정리
 -   숫자형 벡터 만들기와 연산
 -   dataframe 만들기와 인덱싱
+
+
+
+# 수업 (2021115)
+
+- 각자 Topic 들에 대한 스터디 및 Rmarkdown 문서 작성 진행 
+
+# 수업 (2021118)
+
+- 각자 Topic Rmarkdown 문서 업데이트 및 제출 
+
+# 수업 (2021122)
+
+- Rmarkdown 문서 점검 및 코드 재작성
+- Rstudio 프로젝트 활용
+- Rstudio 목차 기능 활용 (document outline)
+- DNA 서열 읽고 쓰기 `Biostrings` 패키지 활용
+- [pay211118](pay211118.Rmd) 강의 Rmarkdown 코드 
+
+
+
+
+

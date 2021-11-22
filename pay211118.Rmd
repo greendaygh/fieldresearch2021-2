@@ -1,0 +1,105 @@
+---
+title: "PAY211118"
+author: "박아영"
+date: '2021 11 17 '
+output: 
+  html_document:
+    number_sections: true
+---
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+
+
+When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+# Rmarkdown 에서 주석
+블럭 설정 후 CTRL + SHIFT + c
+
+# Sequence analysis
+
+Ref: A Little Book of R For Bioinformatics(2011)
+(https://buildmedia.readthedocs.org/media/pdf/a-little-book-of-r-for-bioinformatics/latest/a-little-book-of-r-for-bioinformatics.pdf)
+
+- Insert code chunk: Ctrl + Alt + i
+
+```{r, eval=F}
+help("library") #모르는거 묻기
+?library
+## No documentation for 'libary' in specified packages and libraries:
+## you could try '??libary'
+help("GC") #모르는거 묻기
+getwd() #작업 공간 확인
+```
+
+# 필요한 패키지 설치 및 장착하기
+
+CRAN packages: Rstudio > Packages > Install 
+Bioconductor packages: https://bioconductor.org/packages/release/bioc/html/Biostrings.html 참고 
+
+```
+if (!requireNamespace("BiocManager", quietly = TRUE))
+   install.packages("BiocManager")
+
+BiocManager::install("Biostrings")
+```
+
+# DNA 서열 불러오기
+
+package help: `help(package="Biostrings")` 사용
+
+## DNA 서열 만들기 
+
+```{r, eval=F}
+library(Biostrings)
+
+rndseqchr <- sample(DNA_ALPHABET[1:4], 99, replace = T)
+#"ATGCGGCT"
+length(rndseqchr)
+rndseq <- paste(c("ATG", rndseqchr, "TAG"), collapse = "")
+
+```
+
+## DNA 서열 읽고 쓰기 
+
+```{r, eval=F}
+class(rndseq)
+
+rndseq2 <- DNAStringSet(rndseq)
+class(rndseq2)
+names(rndseq2) <- "mydna"
+
+writeXStringSet(rndseq2, "rndna.fasta", format="fasta")
+
+rndseq3 <- readDNAStringSet("rndna.fasta")
+nchar(rndseq3)
+
+letterFrequency(rndseq3, c("A", "C", "G", "T"))
+letterFrequency(rndseq3, DNA_ALPHABET[1:4])
+
+letterFrequency(rndseq3, c("A", "C", "G", "T"))
+toString(rndseq3)
+
+trinucleotideFrequency(rndseq3, step=3)
+
+```
+
+
+# Rmarkdown 문법
+
+- 강조된 텍스트입니다 **강조된 텍스트입니다**
+- 기울여진 텍스트입니다 *기울여진 텍스트입니다*
+- 굵고 기울여진 텍스트입니다 *굵고 기울여진 텍스트입니다*
+- 취소된 텍스트입니다 ~~취소된 텍스트입니다~~
+- 밑줄 있는 텍스트입니다 <u>밑줄 있는 텍스트입니다</u>
+- 노란 글씨입니다. <span style="color:red">노란 글씨입니다</span>.
+- 다적용해보자 ~다적용해보자~
+- 줄바꿈: 2번 띄어쓰기 / : line break
+
+- Red <span style="color:red"> red </span>
+- #d3d3d3 <span style="color:#d3d3d3">#d3d3d3 
+- rgb(245, 235, 13) <span style="color:rgb(245, 235, 13)">rgb(245, 235, 13) </span>
+
+
+
