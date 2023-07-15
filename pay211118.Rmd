@@ -103,3 +103,52 @@ trinucleotideFrequency(rndseq3, step=3)
 
 
 
+```{r, eval=F}
+library(Biostrings)
+library(genbankr)
+library(GenomicRanges)
+library(plyranges)
+library(tidyverse)
+
+## bt genome
+gb = readGenBank("AE015928.1.gb")
+
+## extract cds range
+tmp <- cds(gb)
+btcds <- tmp %>% 
+  select(locus_tag)
+
+## extract sequence from genbank
+btseq <- getSeq(gb)
+
+## extract cds sequence
+cdsseq <- getSeq(btseq, btcds)
+
+## get codon frequency for each cds
+codonfreq <- trinucleotideFrequency(cdsseq, step=3)
+
+##
+class(codonfreq)
+sum(codonfreq[,1])
+
+codonfreqall <- colSums(codonfreq)
+barplot(codonfreqall)
+
+codontbl <- GENETIC_CODE %>% 
+  data.frame() %>% 
+  rownames_to_column() %>% 
+  rename(codon = "rowname", AA=".")
+
+
+```
+
+
+
+# GenomicRanges
+
+https://bioconductor.org/packages/release/bioc/html/GenomicRanges.html
+
+
+
+
+

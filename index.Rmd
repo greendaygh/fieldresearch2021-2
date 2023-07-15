@@ -1,16 +1,16 @@
 ---
 title: "UST 2021-2학기 현장연구"
 output:
-  html_document:
-    toc: yes
-    toc_float: yes
-    toc_depth: 2
-    number_sections: yes
   pdf_document:
     toc: yes
     toc_depth: '2'
     number_sections: yes
     latex_engine: xelatex
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 2
+    number_sections: yes
 mainfont : NanumGothic
 ---
 
@@ -47,7 +47,7 @@ mainfont : NanumGothic
 -   12\~15주 - 수강생별 기술 학습 및 실습 5\~8
 -   16주 - 테크니컬 노트 최종 정리
 
-# 수업 (20210902)
+# 수업 (20210902 목)
 
 ## 주제선정
 
@@ -104,6 +104,10 @@ mainfont : NanumGothic
 -   브라우져 오픈
 -   주소창에 공지된 IP 입력 (카톡 발신 예정)
 -   설정된 계정으로 Rstudio 로그인
+
+# 수업 (20210906 월)
+
+# 수업 (20210907 화)
 
 # 수업 (20210913)
 
@@ -353,23 +357,73 @@ v5
 -   숫자형 벡터 만들기와 연산
 -   dataframe 만들기와 인덱싱
 
-
-
 # 수업 (2021115)
 
 - 각자 Topic 들에 대한 스터디 및 Rmarkdown 문서 작성 진행 
 
-# 수업 (2021118)
+# 수업 (20211118)
 
 - 각자 Topic Rmarkdown 문서 업데이트 및 제출 
 
-# 수업 (2021122)
+# 수업 (20211122)
 
 - Rmarkdown 문서 점검 및 코드 재작성
 - Rstudio 프로젝트 활용
 - Rstudio 목차 기능 활용 (document outline)
 - DNA 서열 읽고 쓰기 `Biostrings` 패키지 활용
 - [pay211118](pay211118.Rmd) 강의 Rmarkdown 코드 
+
+
+# 수업 (20211125)
+
+## 성원재
+
+
+# 수업 (20211129)
+
+- 효소공학회 참가 
+
+
+# 수업 (20211202)
+
+- 수업 
+
+
+# 수업 (20211206)
+
+- 리포트 작성 실습
+
+
+# 수업 (20211213)
+
+## 성원재
+
+- 보고서 구조 완성 및 pdf 형태로 rmarkdown 마무리 요청
+- rmarkdown 사용법 등 배우는 것을 목적으로
+
+## 허성보
+
+- 보고서 구조 완성 리눅스에서 Rocker (docker) 실행하는 코드 실습
+
+## 고민지
+
+- Rstudio에서 엑셀 파일 읽고 그래프 그리기
+- tidyverse 패키지 활용 실제 데이터 엑셀파일 막대그래프 그리기
+
+## 박성군
+
+- demultiplexing 코드 리뷰 
+- Bash script 형대로 진행, R CMD 활용
+
+## Aporva
+
+- 단백질 엔지니어링 툴 개발 기본 방향 설명
+- 보고서 Intro, Dicussion 보강 요청
+
+## 박아영
+
+
+
 
 
 
